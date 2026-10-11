@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mon Compte du Jour</title>
+<meta name="application-name" content="Mon Compte">
+<meta name="apple-mobile-web-app-title" content="Mon Compte">
+<meta name="theme-color" content="#e07a3f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Mon Compte du Jour</h1>
+  <p class="sub">Écris tes montants, le total se calcule tout seul</p>
+
+  <div class="card">
+    <h2>Le matin</h2>
+    <div class="row"><label><span class="dot" style="background:#6b7280"></span>Espèces</label><input id="m0" inputmode="numeric" placeholder="0"></div>
+    <div class="row"><label><span class="dot" style="background:#f5c400"></span>MTN</label><input id="m1" inputmode="numeric" placeholder="0"></div>
+    <div class="row"><label><span class="dot" style="background:#0a6cc4"></span>Moov</label><input id="m2" inputmode="numeric" placeholder="0"></div>
+    <div class="row"><label><span class="dot" style="background:#e0231c"></span>Celtiis</label><input id="m3" inputmode="numeric" placeholder="0"></div>
+    <div class="tot"><span>Total du matin</span><span id="tm">0 FCFA</span></div>
+  </div>
+
+  <div class="card">
+    <h2>Le soir</h2>
+    <div class="row"><label><span class="dot" style="background:#6b7280"></span>Espèces</label><input id="s0" inputmode="numeric" placeholder="0"></div>
+    <div class="row"><label><span class="dot" style="background:#f5c400"></span>MTN</label><input id="s1" inputmode="numeric" placeholder="0"></div>
+    <div class="row"><label><span class="dot" style="background:#0a6cc4"></span>Moov</label><input id="s2" inputmode="numeric" placeholder="0"></div>
+    <div class="row"><label><span class="dot" style="background:#e0231c"></span>Celtiis</label><input id="s3" inputmode="numeric" placeholder="0"></div>
+    <div class="tot"><span>Total du soir</span><span id="ts">0 FCFA</span></div>
+  </div>
+
+  <div id="res" class="res">
+    <div class="big">Remplis les montants</div>
+    <small>Le résultat s'affichera ici</small>
+  </div>
+
+  <button id="reset">Nouvelle journée</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
